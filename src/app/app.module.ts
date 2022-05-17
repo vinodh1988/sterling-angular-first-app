@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,7 +13,7 @@ import { BoxComponent } from './components/box/box.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule //if you want to use components ,services, pipes, directives and pipes
+    AppRoutingModule, FormsModule //if you want to use components ,services, pipes, directives and pipes
                      //from other modules ,import the module here
   ],
   providers: [],//services which need to be injected across the module - not mandatory

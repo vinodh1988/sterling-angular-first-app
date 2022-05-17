@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'SampleAPP';
   developers = ["Narayan","Hari","Joseph","Alex","Naveen"]
   theme ="theme1"
+  font="Courier"
 
   changeTheme(){
     this.theme= this.theme=="theme1"? "theme2":"theme1";

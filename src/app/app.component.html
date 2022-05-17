@@ -1,9 +1,17 @@
-<div [ngClass]="theme">
+<div [ngClass]="theme" [style.fontFamily]="font">
 <h1> First Angular App </h1>
 <hr/>
 <h3>{{title}}</h3>
 <hr/>
 <h3><u> Developers </u></h3>
+<h4>Fonts :: <select [(ngModel)]="font">
+     <option>Comic Sans MS</option>
+     <option>Arial</option>
+     <option>Agency FB</option>
+     <option>Forte</option>
+     <option>Courier</option>
+     <option>Consolas</option>
+</select></h4>
 <ul>
    <li *ngFor="let x of developers">{{x}}</li>
 </ul>
