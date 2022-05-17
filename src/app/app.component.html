@@ -1,3 +1,4 @@
+<div [ngClass]="theme">
 <h1> First Angular App </h1>
 <hr/>
 <h3>{{title}}</h3>
@@ -6,7 +7,10 @@
 <ul>
    <li *ngFor="let x of developers">{{x}}</li>
 </ul>
+<button (click)="changeTheme()" >changeTheme</button>
+<br/>
 <app-box></app-box>
 <app-box></app-box>
 <app-box></app-box>
 <app-box></app-box>
+</div>
