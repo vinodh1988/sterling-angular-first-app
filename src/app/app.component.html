@@ -17,8 +17,7 @@
 </ul>
 <button (click)="changeTheme()" >changeTheme</button>
 <br/>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
-<app-box></app-box>
+<app-box *ngFor="let x of parentdata.titles; let y=index" 
+[title]="x" [items]="parentdata.items[y]"></app-box>
+
 </div>
