@@ -1,0 +1,25 @@
+.form-field {
+    background-color: rgb(252, 252, 140);
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: arial, sans-serif;
+    color: darkred;
+    height: 30px;
+    width: 400px;
+    margin: 20px;
+}
+
+button{
+    background-color: darkred;
+    color: white;
+    border:none;
+    padding-top: 5px;
+    margin-left:50px;
+    margin-top:5px;
+}
+
+#task{
+    overflow: hidden;
+    width: 600px;
+    background-color: rgb(184, 184, 208);
+}

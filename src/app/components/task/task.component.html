@@ -1,0 +1,28 @@
+<div id="task">
+    <div class="form-field">
+        Number of boxes : <input type="number" [(ngModel)]="nobx">
+    </div>
+    <div class="form-field">
+        Font color : <input type="color" [(ngModel)]="fcolor">
+    </div>
+    <div class="form-field">
+        Background Color : <input type="color" [(ngModel)]="bgcolor">
+    </div>
+    <div class="form-field">
+        Font : <select [(ngModel)]="ffamily">
+            <option>Comic Sans MS</option>
+            <option>Arial</option>
+            <option>Agency FB</option>
+            <option>Forte</option>
+            <option>Courier</option>
+            <option>Consolas</option>
+               </select>
+    </div>
+    <div class="form-field">
+         <button (click)="fillarray()">Generate</button>
+    </div>
+
+    <app-rectangle *ngFor="let x of numarray"
+      [fontFamily]="ffamily" [color]="fcolor" [bcolor]="bgcolor"
+    ></app-rectangle>
+</div>

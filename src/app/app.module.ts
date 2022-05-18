@@ -5,11 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BoxComponent } from './components/box/box.component';
+import { TaskComponent } from './components/task/task.component';
+import { RectangleComponent } from './components/task/rectangle/rectangle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BoxComponent //components, directives and pipes need to be specified
+    BoxComponent,
+    TaskComponent,
+    RectangleComponent //components, directives and pipes need to be specified
   ],
   imports: [
     BrowserModule,
