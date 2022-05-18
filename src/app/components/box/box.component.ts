@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit ,EventEmitter,Output} from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -8,11 +8,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BoxComponent implements OnInit {
   @Input() title:any;
   @Input('items')  values:any;
+  @Output() getItem:EventEmitter<string>=new EventEmitter<string>();
 
-  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  whenClicked(x:string){
+    this.getItem.emit(x);
+  }
 }

@@ -1,9 +1,10 @@
-<app-task></app-task>
+
 <div [ngClass]="theme" [style.fontFamily]="font">
 <h1> First Angular App </h1>
 <hr/>
 <h3>{{title}}</h3>
 <hr/>
+<h3>Last Selected item :: {{selected}}</h3>
 <h3><u> Developers </u></h3>
 <h4>Fonts :: <select [(ngModel)]="font">
      <option>Comic Sans MS</option>
@@ -19,6 +20,6 @@
 <button (click)="changeTheme()" >changeTheme</button>
 <br/>
 <app-box *ngFor="let x of parentdata.titles; let y=index" 
-[title]="x" [items]="parentdata.items[y]"></app-box>
+[title]="x" [items]="parentdata.items[y]" (getItem)="receiveData($event)"></app-box>
 
 </div>
